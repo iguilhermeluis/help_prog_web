@@ -1,0 +1,265 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400; }
+
+:root,
+html,
+body,
+#root {
+  color: rgba(0, 0, 0, 0.8);
+  position: relative;
+  min-height: 100vh;
+  font-size: 62.5%;
+  height: 100%;
+  background-color: #e5e5e5;
+  -webkit-text-size-adjust: 100%;
+     -moz-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+          text-size-adjust: 100%;
+  font-family: Proxima Nova, -apple-system, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility; }
+
+body {
+  font-size: 1.6rem !important; }
+
+#headerMain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background: #fff;
+  height: 10rem; }
+  #headerMain img {
+    margin-top: 5rem; }
+  #headerMain nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    #headerMain nav a {
+      color: #595959;
+      text-decoration: none;
+      -webkit-text-decoration-style: none;
+              text-decoration-style: none;
+      padding: 1rem;
+      -webkit-transition: 0.5s;
+      transition: 0.5s; }
+      #headerMain nav a:hover {
+        color: #029082; }
+
+#banner-main {
+  height: 52rem;
+  background: #029082;
+  overflow: hidden;
+  width: 100%;
+  background-image: url("../img/banner-petsenac.jpg");
+  background-position: top;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  min-height: 90vh; }
+
+#productMain {
+  margin: 2rem 0; }
+  #productMain h1 {
+    margin: 2rem 0; }
+    #productMain h1 b {
+      color: red; }
+  #productMain .col-md-2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    #productMain .col-md-2 a {
+      text-decoration: none !important; }
+  #productMain .more-product {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-radius: 0.6rem;
+    background: #029082;
+    -webkit-transition: 0.5s;
+    transition: 0.5s; }
+    #productMain .more-product:hover {
+      background: #01685e; }
+    #productMain .more-product a {
+      color: #fff;
+      width: 80%;
+      font-weight: bold;
+      text-decoration: none;
+      font-size: 2.1rem;
+      text-align: center; }
+  #productMain .more-product-offer {
+    background: #d42c33 !important;
+    -webkit-transition: 0.5s;
+    transition: 0.5s; }
+    #productMain .more-product-offer:hover {
+      background: #b3242a !important; }
+  #productMain .box-image {
+    width: 15rem;
+    height: 15rem;
+    border: 0.1rem solid #b9b9b9;
+    background: #fff;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    border-radius: 0.8rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    #productMain .box-image img {
+      max-width: 10rem;
+      height: auto; }
+  #productMain .description {
+    margin: 1rem 0 3rem 0; }
+    #productMain .description .title-product {
+      color: #1c5e59;
+      font-size: 1.4rem; }
+    #productMain .description .description-product {
+      color: #444444;
+      font-size: 1.2rem;
+      margin: 1rem 0; }
+    #productMain .description .price-product {
+      font-weight: bold;
+      font-size: 1.4rem;
+      color: #f6a501; }
+
+#box-promotion {
+  height: 40rem;
+  background: crimson;
+  overflow: hidden;
+  width: 100%;
+  background-image: url("../img/banner-miau.jpg");
+  background-position: top;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  #box-promotion div {
+    margin-left: 6rem;
+    color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-width: 50rem; }
+    #box-promotion div .title-promotion {
+      font-weight: bold;
+      font-size: 5.1rem;
+      margin-bottom: 3rem; }
+    #box-promotion div .description-promotion {
+      font-size: 4.8rem;
+      text-align: center; }
+
+.footer-main {
+  background: #1f1f1f;
+  height: 20rem;
+  margin-top: 6rem;
+  border-top: 1rem solid #d42c33; }
+
+.box-form-login {
+  padding: 2rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-top: 13rem;
+  background: #fff;
+  border-radius: 0.6rem;
+  height: 30rem;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); }
+  .box-form-login:hover {
+    -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+            box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
+  .box-form-login input {
+    font-family: "Roboto", sans-serif;
+    outline: 0;
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    margin: 0 0 1.5rem;
+    padding: 1.5rem;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    font-size: 1.4rem; }
+  .box-form-login button {
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    color: #ffffff;
+    font-size: 14px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    background: #029082;
+    cursor: pointer; }
+    .box-form-login button:hover {
+      background: #028e80; }
+
+.container-login {
+  margin-top: 10vhs; }
+
+/*# sourceMappingURL=style.css.map */

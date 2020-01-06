@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+:root,
+html,
+body,
+#root {
+  color: rgba(0, 0, 0, 0.8);
+  position: relative;
+  min-height: 100vh;
+  font-size: 62.5%;
+  height: 100%;
+  background-color: #e5e5e5;
+  text-size-adjust: 100%;
+  font-family: Proxima Nova, -apple-system, Helvetica Neue, Helvetica, Roboto,
+    Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  font-size: 1.6rem !important;
+}

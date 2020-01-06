@@ -1,0 +1,112 @@
+<?php 
+
+function acento_para_html($acento){
+	$comacento = array('Angry Birds (Provencal e Tradicional)',
+'Arca de Noe',
+'Avioes',
+'Ben 10 (Tradicional e Provencal)',
+'BEN10 ForÃ§a Alienigena',
+'Bonecas de Pano (Rosa e Lilas)',
+'Circo (Tradicional e Provencal)',
+'Cocorico',
+'Copa do Mundo (Provencal e Tradicional)',
+'Hot Wheels - Provencal e Tradicional',
+'Mickey (Provencal e Tradicional)',
+'Nosso Espaco',
+'O Pequeno Principe',
+'Os Incriveis',
+'Ovelinhas (Provencal)',
+'Patati Patata',
+'Super Herois',
+'Provencal - Rosa e Marrom',
+'Provencal - Azul e Marrom',
+'Herois da Marvel');
+	$acentohtml   = array('Angry Birds (Provençal e Tradicional)',
+'Arca de Noé',
+'Aviões',
+'Ben 10 (Tradicional e Provençal)',
+'BEN10 Força AlienÃ­gena',
+'Bonecas de Pano (Rosa e Lilás)',
+'Circo (Tradicional e ProvenÃ§al)',
+'Cocoricó',
+'Copa do Mundo (Provençal e Tradicional)',
+'Hot Wheels - Provençal e Tradicional',
+'Mickey (Provençal e Tradicional)',
+'Nosso Espaço',
+'O Pequeno Príncipe',
+'Os Incríveis',
+'Ovelinhas (Provençal)',
+'Patati Patatá',
+'Super Heróis',
+'Provençal - Rosa e Marrom',
+'Provençal - Azul e Marrom',
+'Heróis da Marvel');
+	$umarray  = str_replace($comacento, $acentohtml, $acento);
+	return $umarray;
+}
+
+$cor = array(
+'background:rgba(255,0,0,1.00)',
+'background:rgba(255,0,50,1.00)',
+'background:rgba(255,0,100,1.00)',
+'background:rgba(0,150,255,1.00)',
+'background:rgba(255,0,200,1.00)',
+'background:rgba(255,0,255,1.00)',
+'background:rgba(0,255,200,1.00)',
+'background:rgba(150,0,255,1.00)',
+'background:rgba(100,0,255,1.00)',
+'background:rgba(0,255,50,1.00)',
+'background:rgba(0,0,255,1.00)'
+
+);
+$acor=0;
+
+$path = "galeria/";
+$diretorio = dir($path); 
+$tarquivo = array();
+
+while ($Sarquivo = $diretorio -> read()){
+$tarquivo[] = $Sarquivo;
+}
+
+
+$numTemas = count($tarquivo);
+sort($tarquivo);
+$numAlbum = 0;
+$in=1;
+
+
+
+
+while($numAlbum < $numTemas){
+
+$arquivo=acento_para_html($tarquivo[$numAlbum]);
+if(($arquivo!='.')&&($arquivo!='..')){
+
+echo '"'.$arquivo.'"';
+
+$indiretorio = dir($path.$tarquivo[$numAlbum]);
+
+$inn=1;
+while($inarquivo = $indiretorio -> read()){
+if(($inarquivo!='.')&&($inarquivo!='..')&&($inn!=2)){
+
+
+$inn++;
+}
+
+}
+$indiretorio -> close();
+
+}
+echo '
+
+</div>
+';
+
+$numAlbum++; $in++; $acor++;if($acor==11){$acor=0;}
+}
+
+$diretorio -> close();
+
+?>
